@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width,initial-scale = 1.0">
+	<meta http-equi="XUA_Compatible" content="ie=edge">
+	<link rel="stylesheet"  href="styles.css">
+	<script defer src="script.js"></script>
+	<title>Clock</title>
+</head>
+<body>
+	<div class="clock">
+		<div class="hand hour" data-hour-hand></div>
+		<div class="hand minute" data-minute-hand></div>
+		<div class="hand second" data-second-hand></div>
+		<div class="number number1"><div class="reverse">1</div></div>
+		<div class="number number2"><div class="reverse">2</div></div>
+		<div class="number number3"><div class="reverse">3</div></div>
+		<div class="number number4"><div class="reverse">4</div></div>
+		<div class="number number5"><div class="reverse">5</div></div>
+		<div class="number number6"><div class="reverse">6</div></div>
+		<div class="number number7"><div class="reverse">7</div></div>
+		<div class="number number8"><div class="reverse">8</div></div>
+		<div class="number number9"><div class="reverse">9</div></div>
+		<div class="number number10"><div class="reverse">10</div></div>
+		<div class="number number11"><div class="reverse">11</div></div>
+		<div class="number number12"><div class="reverse">12</div></div>
+	</div>
+
+	<style> /* this is for digits to appear straight in the clock
+				otherwise they are rotated*/
+	 .reverse {
+    --reverse: 0;
+    transform: rotate(var(--reverse));
+  }
+		.number1 div{ --reverse: -30deg}
+  .number2 div{ --reverse: -60deg}
+  .number3 div{ --reverse: -90deg}
+  .number4 div{ --reverse: -120deg}
+  .number5 div{ --reverse: -150deg}
+  .number6 div{ --reverse: -180deg}
+  .number7 div{ --reverse: -210deg}
+  .number8 div{ --reverse: -240deg}
+  .number9 div{ --reverse: -270deg}
+  .number10 div{--reverse: -300deg}
+  .number11 div{--reverse: -330deg}
+	</style>
+
+</body>
+</html>
